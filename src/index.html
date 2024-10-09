@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RD's Snake</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>RD's Snake</h1>
+
+    <!-- Difficulty Selection Screen -->
+    <div id="difficulty-selection" class="screen">
+      <h3>Select Difficulty</h3>
+      <button class="difficulty-btn" data-speed="150">Easy</button>
+      <button class="difficulty-btn" data-speed="100">Medium</button>
+      <button class="difficulty-btn" data-speed="50">Hard</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over" class="screen hidden">
+      <h2>Game Over!</h2>
+      <button id="restart-btn">Play Again</button>
+    </div>
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" width="400" height="400" class="hidden"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
