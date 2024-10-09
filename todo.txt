@@ -1,0 +1,7 @@
+
+
+- Score multiplier by difficulty
+- Scorebox out
+
+- Music & Sound
+- Slding animation for h1

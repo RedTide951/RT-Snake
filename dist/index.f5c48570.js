@@ -584,7 +584,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"8ZNvh":[function(require,module,exports) {
-// Get references 
+// Get references
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 // Screens
@@ -601,6 +601,7 @@ let snake;
 let direction;
 let food;
 let score = 0;
+let scoreIncrement = 10; // default
 // Initialize
 function init(speed) {
     score = 0;
@@ -621,6 +622,9 @@ function init(speed) {
     gameSpeed = speed;
     game = setInterval(draw, gameSpeed);
 }
+const displayUpdate = ()=>{
+    document.getElementById("scoreBox").textContent = `Score: ${score}`;
+};
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     // Draw boundary
@@ -629,10 +633,6 @@ function draw() {
     // Draw the food
     ctx.fillStyle = "red";
     ctx.fillRect(food.x, food.y, box, box);
-    // Draw Score box
-    ctx.fillStyle = "white";
-    ctx.font = "18px VT323";
-    ctx.fillText(`Score: ${score}`, box, box * 2);
     // Move the snake by creating a new head
     const head = {
         x: snake[0].x,
@@ -657,14 +657,15 @@ function draw() {
     }
     // Draw the snake
     for(let i = 0; i < snake.length; i++){
-        ctx.fillStyle = i === 0 ? "green" : "lightgreen"; // Head vs body
+        ctx.fillStyle = i === 0 ? "lightgreen" : "darkgreen"; // Head vs body
         ctx.fillRect(snake[i].x, snake[i].y, box, box);
     }
-    // Check if snake has eaten the food
+    // if snake has eaten the food
     if (head.x === food.x && head.y === food.y) {
-        score++;
+        score += scoreIncrement;
         spawnFood();
-    } else // Remove the tail
+        displayUpdate();
+    } else // if else remove the tail
     snake.pop();
 }
 // game over
@@ -673,7 +674,10 @@ function endGame() {
     const finalScoreElement = document.getElementById("final-score");
     finalScoreElement.textContent = `Your score: ${score}`;
     canvas.classList.add("hidden");
+    scoreBox.classList.add("hidden");
     gameOverScreen.classList.remove("hidden");
+    score = 0;
+    displayUpdate();
 }
 // Spawn food
 function spawnFood() {
@@ -687,7 +691,7 @@ function spawnFood() {
         break;
     }
 }
-// Change direction based on key presses
+// Controls
 document.addEventListener("keydown", (event)=>{
     if (event.key === "ArrowLeft" && direction !== "RIGHT") direction = "LEFT";
     else if (event.key === "ArrowUp" && direction !== "DOWN") direction = "UP";
@@ -702,18 +706,23 @@ difficultyButtons.forEach((button)=>{
         startGame(speed);
     });
 });
-// Start the game with selected difficulty
+// start game --- Difficulty multipliers
 function startGame(speed) {
-    gameSpeed = speed; // Set the game speed
+    gameSpeed = speed;
+    if (speed === 150) scoreIncrement = 10;
+    else if (speed === 100) scoreIncrement = 20;
+    else if (speed === 50) scoreIncrement = 30;
     difficultySelection.classList.add("hidden");
     gameOverScreen.classList.add("hidden");
     canvas.classList.remove("hidden");
+    scoreBox.classList.remove("hidden");
     init(gameSpeed);
 }
 // game restart
 restartBtn.addEventListener("click", ()=>{
     console.log("Restart button clicked");
-    startGame(gameSpeed); // Restart with the same speed
+    difficultySelection.classList.remove("hidden");
+    gameOverScreen.classList.add("hidden");
 });
 
 },{}]},["aJPIF","8ZNvh"], "8ZNvh", "parcelRequirebaba")

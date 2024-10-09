@@ -25,6 +25,15 @@ h1 {
 
 canvas {
   border: 2px solid #04b910;
+  width: 90vw;
+  max-width: 400px;
+  height: 90vw;
+  max-height: 400px;
+}
+
+#scoreBox {
+  margin-top: 20px;
+  font-size: 24px;
 }
 
 button {
@@ -32,11 +41,11 @@ button {
   color: #fff;
   background-color: #04b910;
   border: none;
-  border-radius: 5px;
+  border-radius: 1px;
   margin: 10px;
   padding: 10px 20px;
   font-family: VT323, monospace;
-  font-size: 16px;
+  font-size: 20px;
   transition: background-color .3s;
 }
 
