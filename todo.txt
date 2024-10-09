@@ -1,7 +1,11 @@
 
 
-- Score multiplier by difficulty
-- Scorebox out
+todo:
+- High score Keeper
+- Buttons for mobile
 
-- Music & Sound
-- Slding animation for h1
+Added: 
+-Sound
+-Scorebox
+-difficulty sensitive scores
+-Random Booster

@@ -1,6 +1,6 @@
-8947
+8954
 106C:\Users\oguzh\Projects\RT-Snake\node_modules\lightningcss-win32-x64-msvc\lightningcss.win32-x64-msvc.node133729745640016174 0
-48C:\Users\oguzh\Projects\RT-Snake\dist\index.html133729753604103722 0
+48C:\Users\oguzh\Projects\RT-Snake\dist\index.html133729802512142040 0
 99C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\features\focusin-focusout-events.js133729745644376561 0
 62C:\Users\oguzh\Projects\RT-Snake\node_modules\lmdb\index.d.cts133729745644994916 0
 97C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\features\css-container-queries.js133729745639645560 0
@@ -66,7 +66,7 @@
 102C:\Users\oguzh\Projects\RT-Snake\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\030-config.md133729745644396546 0
 68C:\Users\oguzh\Projects\RT-Snake\node_modules\tslib\modules\index.js133729745637796652 0
 95C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\features\css-relative-colors.js133729745641945806 0
-37C:\Users\oguzh\Projects\RT-Snake\dist133729779393615394 1
+37C:\Users\oguzh\Projects\RT-Snake\dist133729812195283253 1
 122C:\Users\oguzh\Projects\RT-Snake\node_modules\table\node_modules\ajv\lib\vocabularies\unevaluated\unevaluatedProperties.ts133729745712169462 0
 84C:\Users\oguzh\Projects\RT-Snake\node_modules\msgpackr\dist\index-no-eval.min.js.map133729745648844765 0
 95C:\Users\oguzh\Projects\RT-Snake\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest2.c133729745644035284 0
@@ -109,10 +109,10 @@
 78C:\Users\oguzh\Projects\RT-Snake\node_modules\svgo\plugins\removeEmptyAttrs.js133729745640439073 0
 68C:\Users\oguzh\Projects\RT-Snake\node_modules\minimatch\package.json133729745671398217 0
 99C:\Users\oguzh\Projects\RT-Snake\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\index.js133729745715311548 0
-46C:\Users\oguzh\Projects\RT-Snake\src\script.js133729778483860003 0
+46C:\Users\oguzh\Projects\RT-Snake\src\script.js133729812968503944 0
 106C:\Users\oguzh\Projects\RT-Snake\node_modules\table\node_modules\ajv\dist\compile\validate\boolSchema.d.ts133729745710085482 0
 84C:\Users\oguzh\Projects\RT-Snake\node_modules\ordered-binary\.nyc_output\processinfo133729745635046702 1
-36C:\Users\oguzh\Projects\RT-Snake\src133729741178071722 1
+36C:\Users\oguzh\Projects\RT-Snake\src133729784626128176 1
 68C:\Users\oguzh\Projects\RT-Snake\node_modules\eslint\lib\source-code133729745698927236 1
 116C:\Users\oguzh\Projects\RT-Snake\node_modules\table\node_modules\ajv\dist\vocabularies\validation\limitProperties.js133729745706930355 0
 92C:\Users\oguzh\Projects\RT-Snake\node_modules\table\node_modules\ajv\dist\types\index.js.map133729745708992532 0
@@ -123,7 +123,7 @@
 97C:\Users\oguzh\Projects\RT-Snake\node_modules\@swc\helpers\_\_class_static_private_field_spec_get133729745640689225 1
 62C:\Users\oguzh\Projects\RT-Snake\node_modules\mdn-data\LICENSE133729745630895168 0
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\regions\JP.js133729745647835357 0
-47C:\Users\oguzh\Projects\RT-Snake\src\index.html133729753603538358 0
+47C:\Users\oguzh\Projects\RT-Snake\src\index.html133729789302174651 0
 83C:\Users\oguzh\Projects\RT-Snake\node_modules\resolve\test\node_path\x\aaa\index.js133729745690552204 0
 83C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\features\portals.js133729745650571575 0
 70C:\Users\oguzh\Projects\RT-Snake\node_modules\semver\functions\sort.js133729745674292975 0
@@ -132,7 +132,7 @@
 52C:\Users\oguzh\Projects\RT-Snake\node_modules\@lezer133729745623896933 1
 60C:\Users\oguzh\Projects\RT-Snake\node_modules\wrappy\LICENSE133729745632493564 0
 76C:\Users\oguzh\Projects\RT-Snake\node_modules\enquirer\lib\prompts\toggle.js133729745676446446 0
-46C:\Users\oguzh\Projects\RT-Snake\src\style.css133729779393405440 0
+46C:\Users\oguzh\Projects\RT-Snake\src\style.css133729796582434220 0
 74C:\Users\oguzh\Projects\RT-Snake\node_modules\weak-lru-cache\tests\test.js133729745634402653 0
 64C:\Users\oguzh\Projects\RT-Snake\node_modules\timsort\.npmignore133729745635706730 0
 106C:\Users\oguzh\Projects\RT-Snake\node_modules\@parcel\markdown-ansi\node_modules\supports-color\browser.js133729745695993633 0
@@ -766,7 +766,7 @@
 80C:\Users\oguzh\Projects\RT-Snake\node_modules\table\node_modules\ajv\lib\2019.ts133729745709894305 0
 106C:\Users\oguzh\Projects\RT-Snake\node_modules\table\node_modules\ajv\dist\vocabularies\jtd\elements.js.map133729745708785340 0
 83C:\Users\oguzh\Projects\RT-Snake\node_modules\utility-types\dist\utility-types.d.ts133729745639355540 0
-56C:\Users\oguzh\Projects\RT-Snake\dist\index.2cdaf7bc.css133729779393585421 0
+56C:\Users\oguzh\Projects\RT-Snake\dist\index.2cdaf7bc.css133729802511740909 0
 91C:\Users\oguzh\Projects\RT-Snake\node_modules\@swc\helpers\_\_class_apply_descriptor_update133729745639709926 1
 96C:\Users\oguzh\Projects\RT-Snake\node_modules\table\node_modules\ajv\lib\vocabularies\core\id.ts133729745710704580 0
 60C:\Users\oguzh\Projects\RT-Snake\node_modules\csso\README.md133729745636791324 0
@@ -1096,6 +1096,7 @@
 61C:\Users\oguzh\Projects\RT-Snake\node_modules\lmdb\caching.js133729745645960496 0
 94C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\features\css-featurequeries.js133729745640362305 0
 96C:\Users\oguzh\Projects\RT-Snake\node_modules\@parcel\runtime-js\lib\helpers\node\html-loader.js133729745649714695 0
+67C:\Users\oguzh\Projects\RT-Snake\dist\Retro PowerUP 23.727afe5c.wav133729802511766170 0
 80C:\Users\oguzh\Projects\RT-Snake\node_modules\js-yaml\lib\js-yaml\schema\json.js133729745674783804 0
 62C:\Users\oguzh\Projects\RT-Snake\node_modules\base-x\README.md133729745642697280 0
 60C:\Users\oguzh\Projects\RT-Snake\node_modules\which\which.js133729745666361170 0
@@ -4958,6 +4959,7 @@
 89C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\features\css-image-set.js133729745640825510 0
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\eslint\lib\rules\key-spacing.js133729745694699917 0
 79C:\Users\oguzh\Projects\RT-Snake\node_modules\dom-serializer\lib\esm\index.d.ts133729745634108621 0
+76C:\Users\oguzh\Projects\RT-Snake\src\audio\Retro PickUp Coin StereoUP 04.wav132117304638657606 0
 87C:\Users\oguzh\Projects\RT-Snake\node_modules\eslint\lib\rules\line-comment-position.js133729745694864766 0
 86C:\Users\oguzh\Projects\RT-Snake\node_modules\eslint\lib\rules\lines-around-comment.js133729745694906553 0
 95C:\Users\oguzh\Projects\RT-Snake\node_modules\@parcel\transformer-image\src\ImageTransformer.js133729745647440664 0
@@ -6502,6 +6504,7 @@
 80C:\Users\oguzh\Projects\RT-Snake\node_modules\@parcel\core\src\resolveOptions.js133729745662245564 0
 93C:\Users\oguzh\Projects\RT-Snake\node_modules\@swc\helpers\esm\_initializer_warning_helper.js133729745647005863 0
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\regions\KM.js133729745648291606 0
+74C:\Users\oguzh\Projects\RT-Snake\src\audio\Retro Event Wrong Simple 03.wav132075177959225346 0
 123C:\Users\oguzh\Projects\RT-Snake\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\pseudo\matches.js133729745706004171 0
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\regions\KP.js133729745648311610 0
 69C:\Users\oguzh\Projects\RT-Snake\node_modules\@parcel\core\src\public133729745662443283 1
@@ -6560,6 +6563,7 @@
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\regions\PK.js133729745650455597 0
 92C:\Users\oguzh\Projects\RT-Snake\node_modules\@swc\helpers\_\_apply_decs_2203_r\package.json133729745638966254 0
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\regions\PL.js133729745650465598 0
+80C:\Users\oguzh\Projects\RT-Snake\dist\Retro PickUp Coin StereoUP 04.3cf18b7a.wav133729802511665691 0
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\regions\PR.js133729745650581598 0
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\regions\PT.js133729745650642364 0
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\caniuse-lite\data\regions\PW.js133729745650697760 0
@@ -8943,6 +8947,9 @@
 77C:\Users\oguzh\Projects\RT-Snake\node_modules\.bin\update-browserslist-db.cmd133729745756945030 0
 62C:\Users\oguzh\Projects\RT-Snake\dist\RT-Snake.59712999.js.map133729741177994693 0
 56C:\Users\oguzh\Projects\RT-Snake\.codesandbox\tasks.json133729741177681594 0
-55C:\Users\oguzh\Projects\RT-Snake\dist\index.f5c48570.js133729778484121753 0
-59C:\Users\oguzh\Projects\RT-Snake\dist\index.f5c48570.js.map133729778484151833 0
-60C:\Users\oguzh\Projects\RT-Snake\dist\index.2cdaf7bc.css.map133729779393605401 0
+42C:\Users\oguzh\Projects\RT-Snake\src\audio133729786246441360 1
+63C:\Users\oguzh\Projects\RT-Snake\src\audio\Retro PowerUP 23.wav132105408931716386 0
+78C:\Users\oguzh\Projects\RT-Snake\dist\Retro Event Wrong Simple 03.a844fec8.wav133729802511655700 0
+60C:\Users\oguzh\Projects\RT-Snake\dist\index.2cdaf7bc.css.map133729802511781533 0
+55C:\Users\oguzh\Projects\RT-Snake\dist\index.f5c48570.js133729812195246599 0
+59C:\Users\oguzh\Projects\RT-Snake\dist\index.f5c48570.js.map133729812195273246 0

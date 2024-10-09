@@ -1,4 +1,4 @@
-// Get references
+// references
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -7,11 +7,20 @@ const difficultySelection = document.getElementById("difficulty-selection");
 const gameOverScreen = document.getElementById("game-over");
 const restartBtn = document.getElementById("restart-btn");
 
+// Sounds
+const eatSound = document.getElementById("eatSound");
+const gameOverSound = document.getElementById("gameOverSound");
+const startSound = document.getElementById("startSound");
+eatSound.volume = 0.4;
+startSound.volume = 0.2;
+
 // Difficulty
 const difficultyButtons = document.querySelectorAll(".difficulty-btn");
 
 const box = 20;
 const canvasSize = 400;
+
+// Vars
 
 let gameSpeed;
 let game;
@@ -36,7 +45,18 @@ function init(speed) {
   // Start the game loop with the selected speed
   gameSpeed = speed;
   game = setInterval(draw, gameSpeed);
+  startSound.play();
 }
+
+// Random Score Booster
+const randomScoreBooster = () => {
+  let theNumber = Math.floor(Math.random() * 5);
+
+  if (theNumber === 1) {
+    score += Math.floor(score * 0.2);
+    console.log("Score Booster! Extra points: ", score * 0.2);
+  }
+};
 
 const displayUpdate = () => {
   document.getElementById("scoreBox").textContent = `Score: ${score}`;
@@ -95,6 +115,9 @@ function draw() {
     score += scoreIncrement;
     spawnFood();
     displayUpdate();
+    eatSound.play();
+    randomScoreBooster();
+    console.log("New Score: ", score);
   } else {
     // if else remove the tail
     snake.pop();
@@ -104,9 +127,11 @@ function draw() {
 // game over
 function endGame() {
   clearInterval(game);
+  gameOverSound.play();
 
   const finalScoreElement = document.getElementById("final-score");
   finalScoreElement.textContent = `Your score: ${score}`;
+  console.log("Game Over, final score: ", score);
 
   canvas.classList.add("hidden");
   scoreBox.classList.add("hidden");
@@ -158,11 +183,11 @@ function startGame(speed) {
   gameSpeed = speed;
 
   if (speed === 150) {
-    scoreIncrement = 10;
+    scoreIncrement = 1000;
   } else if (speed === 100) {
-    scoreIncrement = 20;
+    scoreIncrement = 2000;
   } else if (speed === 50) {
-    scoreIncrement = 30;
+    scoreIncrement = 3000;
   }
 
   difficultySelection.classList.add("hidden");

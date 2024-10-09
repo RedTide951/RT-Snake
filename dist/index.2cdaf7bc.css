@@ -15,6 +15,14 @@ h1 {
   font-size: 72pt;
 }
 
+h2 {
+  font-size: 40pt;
+}
+
+h3 {
+  font-size: 24pt;
+}
+
 .screen {
   text-align: center;
 }
@@ -26,9 +34,9 @@ h1 {
 canvas {
   border: 2px solid #04b910;
   width: 90vw;
-  max-width: 400px;
+  max-width: 500px;
   height: 90vw;
-  max-height: 400px;
+  max-height: 500px;
 }
 
 #scoreBox {
