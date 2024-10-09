@@ -1,6 +1,5 @@
-// script.js
 
-// Get references to DOM elements
+// Get references 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -9,32 +8,29 @@ const difficultySelection = document.getElementById("difficulty-selection");
 const gameOverScreen = document.getElementById("game-over");
 const restartBtn = document.getElementById("restart-btn");
 
-// Difficulty Buttons
+// Difficulty
 const difficultyButtons = document.querySelectorAll(".difficulty-btn");
 
-// Game settings
 const box = 20;
-const canvasSize = 400; // Canvas size
+const canvasSize = 400;
 
-let gameSpeed; // To be set based on difficulty
-let game; // To store the interval
-
-// Snake and food
+let gameSpeed;
+let game;
 let snake;
 let direction;
 let food;
+let score = 0;
 
-// Initialize the game
+// Initialize
 function init(speed) {
-  // Reset game variables
+  score = 0;
   snake = [{ x: box * 5, y: box * 5 }];
   direction = "RIGHT";
   food = {
     x: Math.floor(Math.random() * (canvasSize / box)) * box,
     y: Math.floor(Math.random() * (canvasSize / box)) * box,
   };
-
-  // Clear any existing game loop
+  // Clear any existing  loop
   clearInterval(game);
 
   // Start the game loop with the selected speed
@@ -45,13 +41,18 @@ function init(speed) {
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Draw boundary (optional for clarity)
+  // Draw boundary
   ctx.strokeStyle = "#04b910";
   ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
   // Draw the food
   ctx.fillStyle = "red";
   ctx.fillRect(food.x, food.y, box, box);
+
+  // Draw Score box
+  ctx.fillStyle = "white";
+  ctx.font = "18px VT323";
+  ctx.fillText(`Score: ${score}`, box, box * 2);
 
   // Move the snake by creating a new head
   const head = { x: snake[0].x, y: snake[0].y };
@@ -65,7 +66,7 @@ function draw() {
   // Add the new head to the snake
   snake.unshift(head);
 
-  // Wll Collision
+  // Wall Collision
   if (
     head.x < 0 ||
     head.x >= canvasSize ||
@@ -92,17 +93,24 @@ function draw() {
 
   // Check if snake has eaten the food
   if (head.x === food.x && head.y === food.y) {
-    // Snake grows, spawn new food
+    score++;
     spawnFood();
+
   } else {
-    // Remove the tail to keep the snake the same length
+    // Remove the tail
     snake.pop();
   }
+
+
 }
 
-// Function to handle game over
+// game over
 function endGame() {
   clearInterval(game);
+
+  const finalScoreElement = document.getElementById("final-score");
+  finalScoreElement.textContent = `Your score: ${score}`;
+
   canvas.classList.add("hidden");
   gameOverScreen.classList.remove("hidden");
 }
@@ -136,7 +144,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-// Handle difficulty selection
+// difficulty selection
 difficultyButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const speed = parseInt(button.getAttribute("data-speed"));
@@ -147,13 +155,14 @@ difficultyButtons.forEach((button) => {
 
 // Start the game with selected difficulty
 function startGame(speed) {
+  gameSpeed = speed; // Set the game speed
   difficultySelection.classList.add("hidden");
   gameOverScreen.classList.add("hidden");
   canvas.classList.remove("hidden");
-  init(speed);
+  init(gameSpeed);
 }
 
-// Handle game restart
+// game restart
 restartBtn.addEventListener("click", () => {
   console.log("Restart button clicked");
   startGame(gameSpeed); // Restart with the same speed
